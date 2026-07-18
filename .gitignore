@@ -1,0 +1,42 @@
+# Gradle and Android build output
+**/.gradle/
+**/build/
+**/out/
+**/.cxx/
+**/.externalNativeBuild/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Local Android SDK configuration
+**/local.properties
+
+# Signing material and credentials
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+**/keystore.properties
+**/signing.properties
+**/key.properties
+**/secrets.properties
+**/credentials.properties
+.env
+.env.*
+
+# IDE and machine-local state
+**/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Temporary assistant attachments
+**/.codex-remote-attachments/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini

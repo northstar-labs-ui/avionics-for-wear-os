@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Font Awesome Free 6.5.2 "jet-fighter-up" by Fonticons, Inc.
+  Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+  The original silhouette is unchanged. It is rotated clockwise so its nose is
+  tangent to its orbit. The transparent viewport below it places the visual
+  center at radius (113 + 158.5) / 2 = 135.75 when used as the minute hand.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 160">
+  <path
+      fill="#ffffff"
+      transform="matrix(0 0.0439453125 -0.07421875 0 39 13)"
+      d="M270.7 9.7C268.2 3.8 262.4 0 256 0s-12.2 3.8-14.7 9.7L197.2 112.6c-3.4 8-5.2 16.5-5.2 25.2v77l-144 84V280c0-13.3-10.7-24-24-24S0 266.7 0 280v112c0 13.3 10.7 24 24 24s24-10.7 24-24v-8H192v32.7L133.5 468c-3.5 3-5.5 7.4-5.5 12v16c0 8.8 7.2 16 16 16h96V448c0-8.8 7.2-16 16-16s16 7.2 16 16v64h96c8.8 0 16-7.2 16-16V480c0-4.6-2-9-5.5-12L320 416.7V384H464v8c0 13.3 10.7 24 24 24s24-10.7 24-24V280c0-13.3-10.7-24-24-24s-24 10.7-24 24v18.8l-144-84v-77c0-8.7-1.8-17.2-5.2-25.2L270.7 9.7z" />
+</svg>

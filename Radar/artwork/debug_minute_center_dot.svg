@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Debug-only marker whose center follows the minute aircraft at radius 135.75. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 142">
+  <path fill="#ffffffff" d="M3 4.25A2 2 0 1 1 3 8.25A2 2 0 1 1 3 4.25Z" />
+</svg>

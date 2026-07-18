@@ -1,0 +1,13 @@
+* text=auto
+
+# Keep cross-platform launchers predictable.
+gradlew text eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Do not apply text conversions to packaged or visual assets.
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary

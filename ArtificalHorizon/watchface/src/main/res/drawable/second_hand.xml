@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="360dp"
+    android:viewportWidth="30"
+    android:viewportHeight="360">
+
+    <!-- One continuous black spine; its rotational pivot is (15, 180). -->
+    <path
+        android:fillColor="#0E1112"
+        android:pathData="M15,10 L18.75,21 L18.75,176 L21.5,180 L18.75,184 L18.75,330 L15,346 L11.25,330 L11.25,184 L8.5,180 L11.25,176 L11.25,21 Z" />
+
+    <!-- Luminous bars appear only on the indicating half (toward 12). -->
+    <path
+        android:fillColor="#E7EEEE"
+        android:pathData="M12.5,31 L17.5,31 L17.5,45 L12.5,45 Z M12.5,59 L17.5,59 L17.5,73 L12.5,73 Z M12.5,87 L17.5,87 L17.5,101 L12.5,101 Z M12.5,115 L17.5,115 L17.5,129 L12.5,129 Z M12.5,143 L17.5,143 L17.5,157 L12.5,157 Z" />
+</vector>

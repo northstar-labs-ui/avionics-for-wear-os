@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Authored pointing straight up. WFF rotates it as the hour hand. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="450dp"
+    android:height="450dp"
+    android:viewportWidth="450"
+    android:viewportHeight="450">
+    <path
+        android:fillColor="#FF171B1D"
+        android:pathData="M225,31 L239,57 L234,85 L216,85 L211,57 Z" />
+    <path
+        android:fillColor="#FFFFD51A"
+        android:pathData="M225,36 L234,59 L230,80 L220,80 L216,59 Z" />
+</vector>

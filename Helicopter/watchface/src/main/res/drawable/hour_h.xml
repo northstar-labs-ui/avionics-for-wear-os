@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Centered on the dial so WFF rotates it in lockstep with the hour notch. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="450dp"
+    android:height="450dp"
+    android:viewportWidth="450"
+    android:viewportHeight="450">
+    <path
+        android:fillColor="#FFF2F4F2"
+        android:pathData="M152,164 H162 Q166,164 166,168 V282 Q166,286 162,286 H152 Q148,286 148,282 V168 Q148,164 152,164 Z M288,164 H298 Q302,164 302,168 V282 Q302,286 298,286 H288 Q284,286 284,282 V168 Q284,164 288,164 Z M152,216 H298 Q302,216 302,220 V230 Q302,234 298,234 H152 Q148,234 148,230 V220 Q148,216 152,216 Z" />
+</vector>

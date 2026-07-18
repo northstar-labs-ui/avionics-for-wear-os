@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Four-blade rotor authored at 12; WFF's SecondHand supplies sweep rotation. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="450dp"
+    android:height="450dp"
+    android:viewportWidth="450"
+    android:viewportHeight="450">
+    <!-- Dark blade outlines. -->
+    <path
+        android:fillColor="#FF242A2C"
+        android:pathData="M219,218 L219,91 L225,77 L231,91 L231,218 Z" />
+    <path
+        android:fillColor="#FF242A2C"
+        android:pathData="M232,219 L359,219 L373,225 L359,231 L232,231 Z" />
+    <path
+        android:fillColor="#FF242A2C"
+        android:pathData="M231,232 L231,359 L225,373 L219,359 L219,232 Z" />
+    <path
+        android:fillColor="#FF242A2C"
+        android:pathData="M218,231 L91,231 L77,225 L91,219 L218,219 Z" />
+
+    <!-- Steel blade faces. -->
+    <path
+        android:fillColor="#FF8C9698"
+        android:pathData="M222,216 L222,94 L225,85 L228,94 L228,216 Z" />
+    <path
+        android:fillColor="#FF8C9698"
+        android:pathData="M234,222 L356,222 L365,225 L356,228 L234,228 Z" />
+    <path
+        android:fillColor="#FF8C9698"
+        android:pathData="M228,234 L228,356 L225,365 L222,356 L222,234 Z" />
+    <path
+        android:fillColor="#FF8C9698"
+        android:pathData="M216,228 L94,228 L85,225 L94,222 L216,222 Z" />
+
+    <!-- One luminous tip makes the swept second unambiguous. -->
+    <path
+        android:fillColor="#FFF5F7F5"
+        android:pathData="M222,94 L225,85 L228,94 L228,108 L222,108 Z" />
+
+    <!-- Plain functional hub, with no screw-slot imitation. -->
+    <path
+        android:fillColor="#FF202628"
+        android:pathData="M225,211 A14,14 0,1 1,225,239 A14,14 0,1 1,225,211 Z" />
+    <path
+        android:fillColor="#FFD0D5D4"
+        android:pathData="M225,216 A9,9 0,1 1,225,234 A9,9 0,1 1,225,216 Z" />
+</vector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="450dp"
+    android:height="450dp"
+    android:viewportWidth="450"
+    android:viewportHeight="450">
+    <!-- A narrow two-blade propeller matching the original instrument needle. -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFF4F4F0"
+        android:strokeLineCap="round"
+        android:strokeWidth="3"
+        android:pathData="M225,172 L225,278" />
+</vector>

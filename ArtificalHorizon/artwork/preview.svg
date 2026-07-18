@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="450" viewBox="0 0 450 450">
+  <!-- Deterministic vector source for the required PNG picker preview. -->
+  <defs>
+    <clipPath id="dial-aperture">
+      <circle cx="225" cy="225" r="169"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="225" cy="225" r="225" fill="#050607"/>
+  <circle cx="225" cy="225" r="215" fill="#1B1F21"/>
+  <circle cx="225" cy="225" r="202" fill="#090B0C"/>
+  <circle cx="225" cy="225" r="186" fill="#121619"/>
+
+  <g clip-path="url(#dial-aperture)" transform="rotate(10.333 225 225)">
+    <rect x="0" y="0" width="450" height="225" fill="#84CEE6"/>
+    <rect x="0" y="225" width="450" height="225" fill="#242729"/>
+    <line x1="45" y1="225" x2="405" y2="225" stroke="#E0E8E8" stroke-width="5"/>
+    <line x1="45" y1="230" x2="405" y2="230" stroke="#090B0C" stroke-width="2"/>
+
+    <g stroke="#1B2022" stroke-width="4">
+      <line x1="145" y1="115" x2="305" y2="115"/>
+      <line x1="205" y1="137" x2="245" y2="137"/>
+      <line x1="211" y1="151" x2="239" y2="151"/>
+      <line x1="208" y1="166" x2="242" y2="166"/>
+      <line x1="204" y1="181" x2="246" y2="181"/>
+      <line x1="174" y1="198" x2="276" y2="198"/>
+    </g>
+    <path d="M225 76 L245 110 L205 110 Z" fill="#0A0C0D"/>
+
+    <g stroke="#D8E1E1" stroke-width="4">
+      <line x1="181" y1="254" x2="269" y2="254"/>
+      <line x1="207" y1="272" x2="243" y2="272"/>
+      <line x1="210" y1="287" x2="240" y2="287"/>
+      <line x1="207" y1="302" x2="243" y2="302"/>
+      <line x1="203" y1="317" x2="247" y2="317"/>
+      <line x1="150" y1="341" x2="300" y2="341" stroke="#B8C3C3"/>
+    </g>
+  </g>
+
+  <circle cx="225" cy="225" r="172" fill="none" stroke="#060708" stroke-width="7"/>
+  <circle cx="225" cy="225" r="194" fill="none" stroke="#343A3D" stroke-width="3"/>
+  <g stroke-linecap="butt">
+    <line x1="225.0" y1="51.0" x2="225.0" y2="20.0" stroke="#E7ECEC" stroke-width="6"/>
+    <line x1="244.9" y1="36.0" x2="246.4" y2="21.1" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="264.5" y1="39.2" x2="267.6" y2="24.5" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="283.7" y1="44.3" x2="288.3" y2="30.0" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="302.3" y1="51.4" x2="308.4" y2="37.7" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="315.5" y1="68.2" x2="327.5" y2="47.5" stroke="#E7ECEC" stroke-width="5"/>
+    <line x1="336.7" y1="71.3" x2="345.5" y2="59.2" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="352.1" y1="83.8" x2="362.2" y2="72.7" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="366.2" y1="97.9" x2="377.3" y2="87.8" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="378.7" y1="113.3" x2="390.8" y2="104.5" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="381.8" y1="134.5" x2="402.5" y2="122.5" stroke="#E7ECEC" stroke-width="5"/>
+    <line x1="398.6" y1="147.7" x2="412.3" y2="141.6" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="405.7" y1="166.3" x2="420.0" y2="161.7" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="410.8" y1="185.5" x2="425.5" y2="182.4" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="414.0" y1="205.1" x2="428.9" y2="203.6" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="399.0" y1="225.0" x2="430.0" y2="225.0" stroke="#E7ECEC" stroke-width="6"/>
+    <line x1="414.0" y1="244.9" x2="428.9" y2="246.4" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="410.8" y1="264.5" x2="425.5" y2="267.6" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="405.7" y1="283.7" x2="420.0" y2="288.3" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="398.6" y1="302.3" x2="412.3" y2="308.4" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="381.8" y1="315.5" x2="402.5" y2="327.5" stroke="#E7ECEC" stroke-width="5"/>
+    <line x1="378.7" y1="336.7" x2="390.8" y2="345.5" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="366.2" y1="352.1" x2="377.3" y2="362.2" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="352.1" y1="366.2" x2="362.2" y2="377.3" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="336.7" y1="378.7" x2="345.5" y2="390.8" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="315.5" y1="381.8" x2="327.5" y2="402.5" stroke="#E7ECEC" stroke-width="5"/>
+    <line x1="302.3" y1="398.6" x2="308.4" y2="412.3" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="283.7" y1="405.7" x2="288.3" y2="420.0" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="264.5" y1="410.8" x2="267.6" y2="425.5" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="244.9" y1="414.0" x2="246.4" y2="428.9" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="225.0" y1="399.0" x2="225.0" y2="430.0" stroke="#E7ECEC" stroke-width="6"/>
+    <line x1="205.1" y1="414.0" x2="203.6" y2="428.9" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="185.5" y1="410.8" x2="182.4" y2="425.5" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="166.3" y1="405.7" x2="161.7" y2="420.0" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="147.7" y1="398.6" x2="141.6" y2="412.3" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="134.5" y1="381.8" x2="122.5" y2="402.5" stroke="#E7ECEC" stroke-width="5"/>
+    <line x1="113.3" y1="378.7" x2="104.5" y2="390.8" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="97.9" y1="366.2" x2="87.8" y2="377.3" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="83.8" y1="352.1" x2="72.7" y2="362.2" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="71.3" y1="336.7" x2="59.2" y2="345.5" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="68.2" y1="315.5" x2="47.5" y2="327.5" stroke="#E7ECEC" stroke-width="5"/>
+    <line x1="51.4" y1="302.3" x2="37.7" y2="308.4" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="44.3" y1="283.7" x2="30.0" y2="288.3" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="39.2" y1="264.5" x2="24.5" y2="267.6" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="36.0" y1="244.9" x2="21.1" y2="246.4" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="51.0" y1="225.0" x2="20.0" y2="225.0" stroke="#E7ECEC" stroke-width="6"/>
+    <line x1="36.0" y1="205.1" x2="21.1" y2="203.6" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="39.2" y1="185.5" x2="24.5" y2="182.4" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="44.3" y1="166.3" x2="30.0" y2="161.7" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="51.4" y1="147.7" x2="37.7" y2="141.6" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="68.2" y1="134.5" x2="47.5" y2="122.5" stroke="#E7ECEC" stroke-width="5"/>
+    <line x1="71.3" y1="113.3" x2="59.2" y2="104.5" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="83.8" y1="97.9" x2="72.7" y2="87.8" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="97.9" y1="83.8" x2="87.8" y2="72.7" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="113.3" y1="71.3" x2="104.5" y2="59.2" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="134.5" y1="68.2" x2="122.5" y2="47.5" stroke="#E7ECEC" stroke-width="5"/>
+    <line x1="147.7" y1="51.4" x2="141.6" y2="37.7" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="166.3" y1="44.3" x2="161.7" y2="30.0" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="185.5" y1="39.2" x2="182.4" y2="24.5" stroke="#C4CDCD" stroke-width="3"/>
+    <line x1="205.1" y1="36.0" x2="203.6" y2="21.1" stroke="#C4CDCD" stroke-width="3"/>
+  </g>
+  <path d="M207 46 L243 46 L225 67 Z" fill="#F2F5F4"/>
+
+  <g stroke-linecap="round">
+    <line x1="87" y1="225" x2="181" y2="225" stroke="#080A0B" stroke-width="15"/>
+    <line x1="269" y1="225" x2="363" y2="225" stroke="#080A0B" stroke-width="15"/>
+    <line x1="94" y1="225" x2="177" y2="225" stroke="#F34831" stroke-width="9"/>
+    <line x1="273" y1="225" x2="356" y2="225" stroke="#F34831" stroke-width="9"/>
+    <line x1="178" y1="225" x2="207" y2="225" stroke="#090B0C" stroke-width="15" stroke-linecap="butt"/>
+    <line x1="243" y1="225" x2="272" y2="225" stroke="#090B0C" stroke-width="15" stroke-linecap="butt"/>
+    <path d="M202 224 L212 242 L225 232 L238 242 L248 224" fill="none" stroke="#090B0C" stroke-width="10" stroke-linejoin="round"/>
+  </g>
+  <circle cx="225" cy="225" r="18" fill="#090B0C"/>
+
+  <!-- Striped seconds assembly at 40 seconds (8 o'clock). -->
+  <g transform="rotate(240 225 225)">
+    <path d="M221.3 65 L228.7 65 L228.7 385 L221.3 385 Z" fill="#0E1112"/>
+    <path d="M218.5 220 L231.5 220 L231.5 232 L218.5 232 Z" fill="#0E1112"/>
+    <g fill="#E7EEEE">
+      <rect x="222.5" y="76" width="5" height="14"/>
+      <rect x="222.5" y="104" width="5" height="14"/>
+      <rect x="222.5" y="132" width="5" height="14"/>
+      <rect x="222.5" y="160" width="5" height="14"/>
+      <rect x="222.5" y="188" width="5" height="14"/>
+    </g>
+  </g>
+
+  <!-- Pale tapered minute hand at 20 minutes (4 o'clock). -->
+  <g transform="rotate(120 225 225)">
+    <path d="M225 57 L231 219 L225 232 L219 219 Z" fill="#343A3C"/>
+    <path d="M225 63 L229 220 L225 230 L221 220 Z" fill="#E7EEEE"/>
+  </g>
+
+  <circle cx="225" cy="225" r="12" fill="#0A0C0D"/>
+  <circle cx="225" cy="225" r="6" fill="#F34831"/>
+</svg>

@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace
+    height="450"
+    width="450"
+    clipShape="CIRCLE">
+
+    <Metadata
+        key="CLOCK_TYPE"
+        value="ANALOG" />
+    <Metadata
+        key="PREVIEW_TIME"
+        value="10:08:37" />
+
+    <UserConfigurations>
+        <!-- Exposed by Wear OS in the native watch-face editor. -->
+        <ColorConfiguration
+            id="radarColor"
+            displayName="radar_color_label"
+            screenReaderText="radar_color_label"
+            defaultValue="custom_radar_red">
+            <ColorOption id="custom_radar_red" displayName="radar_color_radar_red" screenReaderText="radar_color_radar_red" colors="#FF3B30" />
+            <ColorOption id="custom_atc_green" displayName="radar_color_atc_green" screenReaderText="radar_color_atc_green" colors="#70FF4B" />
+            <ColorOption id="custom_sky_blue" displayName="radar_color_sky_blue" screenReaderText="radar_color_sky_blue" colors="#4FC3F7" />
+            <ColorOption id="custom_amber" displayName="radar_color_amber" screenReaderText="radar_color_amber" colors="#FFB000" />
+            <ColorOption id="custom_ice_white" displayName="radar_color_ice_white" screenReaderText="radar_color_ice_white" colors="#F5F7FA" />
+            <ColorOption id="custom_night" displayName="radar_color_night" screenReaderText="radar_color_night" colors="#000000" />
+            <ColorOption id="custom_navy" displayName="radar_color_navy" screenReaderText="radar_color_navy" colors="#102A43" />
+            <ColorOption id="custom_cockpit_gray" displayName="radar_color_cockpit_gray" screenReaderText="radar_color_cockpit_gray" colors="#2C323A" />
+            <ColorOption id="pixel_graphite" displayName="radar_color_graphite" screenReaderText="radar_color_graphite" colors="#949494" />
+            <ColorOption id="pixel_cloud" displayName="radar_color_cloud" screenReaderText="radar_color_cloud" colors="#E4E4E4" />
+            <ColorOption id="pixel_almond" displayName="radar_color_almond" screenReaderText="radar_color_almond" colors="#F4EFE3" />
+            <ColorOption id="pixel_watermelon" displayName="radar_color_watermelon" screenReaderText="radar_color_watermelon" colors="#FB7976" />
+            <ColorOption id="pixel_coral" displayName="radar_color_coral" screenReaderText="radar_color_coral" colors="#F99586" />
+            <ColorOption id="pixel_pomelo" displayName="radar_color_pomelo" screenReaderText="radar_color_pomelo" colors="#FFA49F" />
+            <ColorOption id="pixel_guava" displayName="radar_color_guava" screenReaderText="radar_color_guava" colors="#FEC0BC" />
+            <ColorOption id="pixel_peach" displayName="radar_color_peach" screenReaderText="radar_color_peach" colors="#FDB78F" />
+            <ColorOption id="pixel_champagne" displayName="radar_color_champagne" screenReaderText="radar_color_champagne" colors="#FCD1B4" />
+            <ColorOption id="pixel_chai" displayName="radar_color_chai" screenReaderText="radar_color_chai" colors="#D8AB77" />
+            <ColorOption id="pixel_sand" displayName="radar_color_sand" screenReaderText="radar_color_sand" colors="#C4B575" />
+            <ColorOption id="pixel_honey" displayName="radar_color_honey" screenReaderText="radar_color_honey" colors="#F0C078" />
+            <ColorOption id="pixel_melon" displayName="radar_color_melon" screenReaderText="radar_color_melon" colors="#FFD88A" />
+            <ColorOption id="pixel_wheat" displayName="radar_color_wheat" screenReaderText="radar_color_wheat" colors="#FFE9B9" />
+            <ColorOption id="pixel_dandelion" displayName="radar_color_dandelion" screenReaderText="radar_color_dandelion" colors="#FEF985" />
+            <ColorOption id="pixel_limoncello" displayName="radar_color_limoncello" screenReaderText="radar_color_limoncello" colors="#FCFFB6" />
+            <ColorOption id="pixel_lemongrass" displayName="radar_color_lemongrass" screenReaderText="radar_color_lemongrass" colors="#E8FCC1" />
+            <ColorOption id="pixel_lime" displayName="radar_color_lime" screenReaderText="radar_color_lime" colors="#D3EA71" />
+            <ColorOption id="pixel_pear" displayName="radar_color_pear" screenReaderText="radar_color_pear" colors="#C7FF81" />
+            <ColorOption id="pixel_spearmint" displayName="radar_color_spearmint" screenReaderText="radar_color_spearmint" colors="#9FF7AD" />
+            <ColorOption id="pixel_fern" displayName="radar_color_fern" screenReaderText="radar_color_fern" colors="#5DD996" />
+            <ColorOption id="pixel_forest" displayName="radar_color_forest" screenReaderText="radar_color_forest" colors="#759A8C" />
+            <ColorOption id="pixel_mint" displayName="radar_color_mint" screenReaderText="radar_color_mint" colors="#A7F9DA" />
+            <ColorOption id="pixel_jade" displayName="radar_color_jade" screenReaderText="radar_color_jade" colors="#B5E1D1" />
+            <ColorOption id="pixel_sage" displayName="radar_color_sage" screenReaderText="radar_color_sage" colors="#CCE4DF" />
+            <ColorOption id="pixel_stream" displayName="radar_color_stream" screenReaderText="radar_color_stream" colors="#B0E4EC" />
+            <ColorOption id="pixel_sapphire" displayName="radar_color_sapphire" screenReaderText="radar_color_sapphire" colors="#7CA6EB" />
+            <ColorOption id="pixel_amethyst" displayName="radar_color_amethyst" screenReaderText="radar_color_amethyst" colors="#AEB4FF" />
+            <ColorOption id="pixel_lilac" displayName="radar_color_lilac" screenReaderText="radar_color_lilac" colors="#D6C3FF" />
+            <ColorOption id="pixel_lavender" displayName="radar_color_lavender" screenReaderText="radar_color_lavender" colors="#E4B0FD" />
+            <ColorOption id="pixel_flamingo" displayName="radar_color_flamingo" screenReaderText="radar_color_flamingo" colors="#FABBFF" />
+            <ColorOption id="pixel_bubble_gum" displayName="radar_color_bubble_gum" screenReaderText="radar_color_bubble_gum" colors="#F9C5E7" />
+        </ColorConfiguration>
+
+        <!-- Remove this debug option and its two scene blocks after alignment. -->
+        <BooleanConfiguration
+            id="alignment_debug"
+            displayName="alignment_debug_label"
+            screenReaderText="alignment_debug_label"
+            defaultValue="FALSE" />
+    </UserConfigurations>
+
+    <Scene>
+        <!--
+          The dial's original outer extent is 204 + 1.5 = 205.5 units.
+          Scaling 205.5 to the 225-unit scene radius makes the ring's outer
+          edge meet every circular display edge while WFF handles resolution.
+        -->
+        <Group
+            name="edge_fitted_face"
+            x="0"
+            y="0"
+            width="450"
+            height="450"
+            pivotX="0.5"
+            pivotY="0.5"
+            scaleX="1.09489"
+            scaleY="1.09489">
+        <!-- OLED-safe base: every pixel is truly black in ambient mode. -->
+        <PartDraw
+            name="black_base"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Rectangle x="0" y="0" width="450" height="450">
+                <Fill color="#FF000000" />
+            </Rectangle>
+        </PartDraw>
+
+        <!-- A restrained configurable wash gives the active face its instrument glow. -->
+        <Group
+            name="interactive_dial_glow"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="0" />
+            <PartDraw x="0" y="0" width="450" height="450" alpha="16">
+                <Ellipse x="18" y="18" width="414" height="414">
+                    <Fill color="[CONFIGURATION.radarColor]" />
+                </Ellipse>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" alpha="10">
+                <Ellipse x="65" y="65" width="320" height="320">
+                    <Fill color="[CONFIGURATION.radarColor]" />
+                </Ellipse>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" alpha="14">
+                <Ellipse x="154" y="154" width="142" height="142">
+                    <Fill color="[CONFIGURATION.radarColor]" />
+                </Ellipse>
+            </PartDraw>
+        </Group>
+
+        <!--
+          Debug lane overlay. The strokes sit just inside the ring centerlines:
+          outer/hour lane = 158.5..204, midpoint 181.25;
+          inner/minute lane = 113..158.5, midpoint 135.75.
+        -->
+        <BooleanConfiguration id="alignment_debug">
+            <BooleanOption id="TRUE">
+                <Group
+                    name="alignment_lane_shading"
+                    x="0"
+                    y="0"
+                    width="450"
+                    height="450">
+                    <Variant mode="AMBIENT" target="alpha" value="0" />
+                    <PartDraw x="0" y="0" width="450" height="450">
+                        <Arc
+                            centerX="225"
+                            centerY="225"
+                            width="362.5"
+                            height="362.5"
+                            startAngle="0"
+                            endAngle="360">
+                            <Stroke color="#1838BDF8" thickness="43.5" />
+                        </Arc>
+                        <Arc
+                            centerX="225"
+                            centerY="225"
+                            width="271.5"
+                            height="271.5"
+                            startAngle="0"
+                            endAngle="360">
+                            <Stroke color="#1822D3A7" thickness="43.5" />
+                        </Arc>
+                    </PartDraw>
+                </Group>
+            </BooleanOption>
+        </BooleanConfiguration>
+
+        <!-- Radar rings and crosshairs stay sparse enough for always-on display. -->
+        <Group
+            name="radar_grid"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="255" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Ellipse x="21" y="21" width="408" height="408">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Ellipse>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" alpha="153">
+                <!-- Leave deliberate clearance around the four cardinal labels. -->
+                <Arc centerX="225" centerY="225" width="317" height="317" startAngle="12" endAngle="78">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="1.5" />
+                </Arc>
+                <Arc centerX="225" centerY="225" width="317" height="317" startAngle="102" endAngle="168">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="1.5" />
+                </Arc>
+                <Arc centerX="225" centerY="225" width="317" height="317" startAngle="192" endAngle="258">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="1.5" />
+                </Arc>
+                <Arc centerX="225" centerY="225" width="317" height="317" startAngle="282" endAngle="348">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="1.5" />
+                </Arc>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" alpha="230">
+                <Arc centerX="225" centerY="225" width="226" height="226" startAngle="12" endAngle="78">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Arc>
+                <Arc centerX="225" centerY="225" width="226" height="226" startAngle="102" endAngle="168">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Arc>
+                <Arc centerX="225" centerY="225" width="226" height="226" startAngle="192" endAngle="258">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Arc>
+                <Arc centerX="225" centerY="225" width="226" height="226" startAngle="282" endAngle="348">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Arc>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" alpha="179">
+                <Ellipse x="164" y="164" width="122" height="122">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Ellipse>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" alpha="192">
+                <Line startX="34" startY="225" endX="46" endY="225">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="64" startY="225" endX="96" endY="225">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="128" startY="225" endX="194" endY="225">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="256" startY="225" endX="324" endY="225">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="354" startY="225" endX="392" endY="225">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="412" startY="225" endX="416" endY="225">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="225" startY="34" endX="225" endY="46">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="225" startY="64" endX="225" endY="103">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="225" startY="130" endX="225" endY="194">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="225" startY="256" endX="225" endY="320">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="225" startY="347" endX="225" endY="386">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+                <Line startX="225" startY="404" endX="225" endY="416">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="2" />
+                </Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Twelve large bearing marks. -->
+        <Group
+            name="hour_bearings"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="255" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Line startX="225" startY="22" endX="225" endY="35">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="4" cap="BUTT" />
+                </Line>
+                <Line startX="326.5" startY="49.2" endX="317.5" endY="64.8">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" cap="BUTT" />
+                </Line>
+                <Line startX="400.8" startY="123.5" endX="385.2" endY="132.5">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" cap="BUTT" />
+                </Line>
+                <Line startX="428" startY="225" endX="422" endY="225">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="4" cap="BUTT" />
+                </Line>
+                <Line startX="400.8" startY="326.5" endX="385.2" endY="317.5">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" cap="BUTT" />
+                </Line>
+                <Line startX="326.5" startY="400.8" endX="317.5" endY="385.2">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" cap="BUTT" />
+                </Line>
+                <Line startX="225" startY="428" endX="225" endY="415">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="4" cap="BUTT" />
+                </Line>
+                <Line startX="123.5" startY="400.8" endX="132.5" endY="385.2">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" cap="BUTT" />
+                </Line>
+                <Line startX="49.2" startY="326.5" endX="64.8" endY="317.5">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" cap="BUTT" />
+                </Line>
+                <Line startX="22" startY="225" endX="28" endY="225">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="4" cap="BUTT" />
+                </Line>
+                <Line startX="49.2" startY="123.5" endX="64.8" endY="132.5">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" cap="BUTT" />
+                </Line>
+                <Line startX="123.5" startY="49.2" endX="132.5" endY="64.8">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" cap="BUTT" />
+                </Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Fine one-minute scale and twelve stronger five-minute marks. -->
+        <Group
+            name="minute_scale"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="0" />
+            <PartDraw x="0" y="0" width="450" height="450" alpha="179">
+                <Arc
+                    centerX="225"
+                    centerY="225"
+                    width="239"
+                    height="239"
+                    startAngle="0"
+                    endAngle="360">
+                    <Stroke
+                        color="[CONFIGURATION.radarColor]"
+                        thickness="3"
+                        dashIntervals="2.1 10.78"
+                        dashPhase="0" />
+                </Arc>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Line startX="225" startY="103" endX="225" endY="105">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="286" startY="119.3" endX="281.5" endY="127.2">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="330.7" startY="164" endX="322.8" endY="168.5">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="330.7" startY="286" endX="322.8" endY="281.5">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="286" startY="330.7" endX="281.5" endY="322.8">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="225" startY="347" endX="225" endY="345">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="164" startY="330.7" endX="168.5" endY="322.8">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="119.3" startY="286" endX="127.2" endY="281.5">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="119.3" startY="164" endX="127.2" endY="168.5">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+                <Line startX="164" startY="119.3" endX="168.5" endY="127.2">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="3" />
+                </Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Cardinal hour and minute readouts echo an aviation radar scope. -->
+        <Group
+            name="dial_labels"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="255" />
+
+            <PartText x="195" y="39" width="60" height="32">
+                <Text align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="23" weight="BOLD" color="[CONFIGURATION.radarColor]">12</Font>
+                </Text>
+            </PartText>
+            <PartText x="379" y="209" width="38" height="32">
+                <Text align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="23" weight="BOLD" color="[CONFIGURATION.radarColor]">3</Font>
+                </Text>
+            </PartText>
+            <PartText x="195" y="379" width="60" height="32">
+                <Text align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="23" weight="BOLD" color="[CONFIGURATION.radarColor]">6</Font>
+                </Text>
+            </PartText>
+            <PartText x="33" y="209" width="38" height="32">
+                <Text align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="23" weight="BOLD" color="[CONFIGURATION.radarColor]">9</Font>
+                </Text>
+            </PartText>
+
+            <PartText x="198" y="105" width="54" height="28" alpha="230">
+                <Text align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="[CONFIGURATION.radarColor]">60</Font>
+                </Text>
+            </PartText>
+            <PartText x="318" y="211" width="42" height="28" alpha="230">
+                <Text align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="[CONFIGURATION.radarColor]">15</Font>
+                </Text>
+            </PartText>
+            <PartText x="198" y="317" width="54" height="28" alpha="230">
+                <Text align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="[CONFIGURATION.radarColor]">30</Font>
+                </Text>
+            </PartText>
+            <PartText x="90" y="211" width="42" height="28" alpha="230">
+                <Text align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="[CONFIGURATION.radarColor]">45</Font>
+                </Text>
+            </PartText>
+        </Group>
+
+        <!--
+          The sourced vector silhouettes are used as the actual clock hands:
+          passenger plane = hours, fighter jet = minutes, beam = seconds.
+        -->
+        <AnalogClock x="0" y="0" width="450" height="450">
+            <!--
+              Outer lane: (158.5 + 204) / 2 = 181.25 orbit radius.
+              The transformed silhouette is 44 units long tangentially and
+              36 units high radially, with visible ring clearance on both sides.
+            -->
+            <HourHand
+                resource="hour_passenger_plane"
+                x="201"
+                y="21"
+                width="48"
+                height="204"
+                pivotX="0.5"
+                pivotY="1"
+                tintColor="[CONFIGURATION.radarColor]" />
+            <!--
+              Next lane inward: (113 + 158.5) / 2 = 135.75 orbit radius.
+              The transformed silhouette is 38 units long tangentially and
+              22.5 units high radially, clearing the minute tick band as well.
+            -->
+            <MinuteHand
+                resource="minute_fighter_jet"
+                x="205"
+                y="65"
+                width="40"
+                height="160"
+                pivotX="0.5"
+                pivotY="1"
+                tintColor="[CONFIGURATION.radarColor]" />
+            <SecondHand
+                resource="radar_sweep_glow"
+                x="218"
+                y="22"
+                width="14"
+                height="203"
+                pivotX="0.5"
+                pivotY="1"
+                tintColor="[CONFIGURATION.radarColor]">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+                <Sweep frequency="15" />
+            </SecondHand>
+            <SecondHand
+                resource="radar_sweep"
+                x="223"
+                y="22"
+                width="4"
+                height="203"
+                pivotX="0.5"
+                pivotY="1"
+                tintColor="[CONFIGURATION.radarColor]">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+                <Sweep frequency="15" />
+            </SecondHand>
+        </AnalogClock>
+
+        <!-- Debug-only dots track the exact visual centers of both aircraft. -->
+        <BooleanConfiguration id="alignment_debug">
+            <BooleanOption id="TRUE">
+                <AnalogClock x="0" y="0" width="450" height="450">
+                    <HourHand
+                        resource="debug_hour_center_dot"
+                        x="222"
+                        y="37"
+                        width="6"
+                        height="188"
+                        pivotX="0.5"
+                        pivotY="1" />
+                    <MinuteHand
+                        resource="debug_minute_center_dot"
+                        x="222"
+                        y="83"
+                        width="6"
+                        height="142"
+                        pivotX="0.5"
+                        pivotY="1" />
+                </AnalogClock>
+            </BooleanOption>
+        </BooleanConfiguration>
+
+        <!-- A crisp hub hides all hand pivots. -->
+        <Group
+            name="center_hub"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="255" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Ellipse x="205" y="205" width="40" height="40">
+                    <Fill color="#FF000000" />
+                </Ellipse>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" alpha="5">
+                <Ellipse x="205" y="205" width="40" height="40">
+                    <Fill color="[CONFIGURATION.radarColor]" />
+                </Ellipse>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Ellipse x="205" y="205" width="40" height="40">
+                    <Stroke color="[CONFIGURATION.radarColor]" thickness="4" />
+                </Ellipse>
+                <Ellipse x="217" y="217" width="16" height="16">
+                    <Fill color="[CONFIGURATION.radarColor]" />
+                </Ellipse>
+            </PartDraw>
+        </Group>
+        </Group>
+    </Scene>
+</WatchFace>

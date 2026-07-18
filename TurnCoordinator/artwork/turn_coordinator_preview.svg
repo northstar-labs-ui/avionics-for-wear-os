@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="450" height="450" viewBox="0 0 450 450"
+     role="img" aria-labelledby="title description">
+  <title id="title">Turn coordinator watch face preview</title>
+  <desc id="description">A circular cockpit instrument face with rotating hour and minute numeral discs, a fixed aircraft and horizon, and a diagonal two-blade propeller seconds indicator.</desc>
+
+  <defs>
+    <radialGradient id="faceShade" cx="44%" cy="35%" r="72%">
+      <stop offset="0" stop-color="#25292c"/>
+      <stop offset="0.56" stop-color="#121517"/>
+      <stop offset="1" stop-color="#050607"/>
+    </radialGradient>
+    <linearGradient id="hourDisc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#24282a"/>
+      <stop offset="1" stop-color="#101315"/>
+    </linearGradient>
+    <linearGradient id="minuteDisc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161a1c"/>
+      <stop offset="1" stop-color="#080a0b"/>
+    </linearGradient>
+    <linearGradient id="lowerPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0f10"/>
+      <stop offset="1" stop-color="#040505"/>
+    </linearGradient>
+    <clipPath id="dialClip">
+      <circle cx="225" cy="225" r="207"/>
+    </clipPath>
+    <path id="outerMinorTick" d="M225 32v10"/>
+    <path id="outerMajorTick" d="M225 31v18"/>
+    <path id="minuteMinorTick" d="M225 96v8"/>
+    <path id="minuteMajorTick" d="M225 92v14"/>
+  </defs>
+
+  <!-- Face border: part of the circular dial, with no case or decorative screws. -->
+  <circle cx="225" cy="225" r="221" fill="#030404"/>
+  <circle cx="225" cy="225" r="216" fill="#0a0c0d" stroke="#c8ced0" stroke-width="3"/>
+  <circle cx="225" cy="225" r="210" fill="url(#faceShade)" stroke="#4e5558" stroke-width="2"/>
+
+  <g clip-path="url(#dialClip)">
+    <!-- The two nested fields represent rotating discs rather than hands. -->
+    <circle cx="225" cy="225" r="166" fill="none" stroke="url(#hourDisc)" stroke-width="76"/>
+    <circle cx="225" cy="225" r="127" fill="none" stroke="#565d60" stroke-width="1.5"/>
+    <circle cx="225" cy="225" r="99" fill="none" stroke="url(#minuteDisc)" stroke-width="54"/>
+    <circle cx="225" cy="225" r="70" fill="#080a0b" stroke="#3f4548" stroke-width="1.5"/>
+
+    <!-- Hour-disc divisions. -->
+    <g fill="none" stroke="#dfe3e2" stroke-linecap="square">
+      <g stroke-width="3.5">
+        <use xlink:href="#outerMajorTick" transform="rotate(-90 225 225)"/>
+        <use xlink:href="#outerMajorTick" transform="rotate(-60 225 225)"/>
+        <use xlink:href="#outerMajorTick" transform="rotate(-30 225 225)"/>
+        <use xlink:href="#outerMajorTick"/>
+        <use xlink:href="#outerMajorTick" transform="rotate(30 225 225)"/>
+        <use xlink:href="#outerMajorTick" transform="rotate(60 225 225)"/>
+        <use xlink:href="#outerMajorTick" transform="rotate(90 225 225)"/>
+      </g>
+      <g stroke-width="2" opacity="0.8">
+        <use xlink:href="#outerMinorTick" transform="rotate(-75 225 225)"/>
+        <use xlink:href="#outerMinorTick" transform="rotate(-45 225 225)"/>
+        <use xlink:href="#outerMinorTick" transform="rotate(-15 225 225)"/>
+        <use xlink:href="#outerMinorTick" transform="rotate(15 225 225)"/>
+        <use xlink:href="#outerMinorTick" transform="rotate(45 225 225)"/>
+        <use xlink:href="#outerMinorTick" transform="rotate(75 225 225)"/>
+      </g>
+    </g>
+
+    <!-- Fixed preview time: hour disc reads 10 at the top index. -->
+    <g fill="#f1f3ef" font-family="Roboto Condensed, Arial Narrow, sans-serif"
+       font-size="34" font-weight="500" text-anchor="middle" dominant-baseline="middle">
+      <text x="60" y="225" transform="rotate(-78 60 225)">7</text>
+      <text x="82" y="143" transform="rotate(-55 82 143)">8</text>
+      <text x="143" y="82" transform="rotate(-28 143 82)">9</text>
+      <text x="225" y="61">10</text>
+      <text x="308" y="82" transform="rotate(28 308 82)">11</text>
+      <text x="368" y="143" transform="rotate(55 368 143)">12</text>
+      <text x="390" y="225" transform="rotate(78 390 225)">1</text>
+    </g>
+
+    <!-- Minute-disc divisions. -->
+    <g fill="none" stroke="#c7cccb" stroke-linecap="square">
+      <g stroke-width="2.5">
+        <use xlink:href="#minuteMajorTick" transform="rotate(-72 225 225)"/>
+        <use xlink:href="#minuteMajorTick" transform="rotate(-48 225 225)"/>
+        <use xlink:href="#minuteMajorTick" transform="rotate(-24 225 225)"/>
+        <use xlink:href="#minuteMajorTick"/>
+        <use xlink:href="#minuteMajorTick" transform="rotate(24 225 225)"/>
+        <use xlink:href="#minuteMajorTick" transform="rotate(48 225 225)"/>
+        <use xlink:href="#minuteMajorTick" transform="rotate(72 225 225)"/>
+      </g>
+      <g stroke-width="1.25" opacity="0.7">
+        <use xlink:href="#minuteMinorTick" transform="rotate(-84 225 225)"/>
+        <use xlink:href="#minuteMinorTick" transform="rotate(-60 225 225)"/>
+        <use xlink:href="#minuteMinorTick" transform="rotate(-36 225 225)"/>
+        <use xlink:href="#minuteMinorTick" transform="rotate(-12 225 225)"/>
+        <use xlink:href="#minuteMinorTick" transform="rotate(12 225 225)"/>
+        <use xlink:href="#minuteMinorTick" transform="rotate(36 225 225)"/>
+        <use xlink:href="#minuteMinorTick" transform="rotate(60 225 225)"/>
+        <use xlink:href="#minuteMinorTick" transform="rotate(84 225 225)"/>
+      </g>
+    </g>
+
+    <!-- Fixed preview time: minute disc reads 35 at the top index. -->
+    <g fill="#e5e8e5" font-family="Roboto Condensed, Arial Narrow, sans-serif"
+       font-size="20" font-weight="500" text-anchor="middle" dominant-baseline="middle">
+      <text x="124" y="204" transform="rotate(-72 124 204)">20</text>
+      <text x="143" y="162" transform="rotate(-48 143 162)">25</text>
+      <text x="181" y="133" transform="rotate(-24 181 133)">30</text>
+      <text x="225" y="123">35</text>
+      <text x="269" y="133" transform="rotate(24 269 133)">40</text>
+      <text x="307" y="162" transform="rotate(48 307 162)">45</text>
+      <text x="326" y="204" transform="rotate(72 326 204)">50</text>
+    </g>
+
+    <!-- A fixed center index reads both discs; it is not a clock hand. -->
+    <g fill="#f3f4ef" stroke="#f3f4ef" stroke-linecap="square">
+      <path d="M225 20v22 M225 82v18 M225 145v23" stroke-width="3"/>
+      <path d="M217 45h16l-8 9z" stroke="none"/>
+      <path d="M219 105h12l-6 8z" stroke="none"/>
+    </g>
+
+    <!-- Opaque lower instrument panel hides the lower halves of both discs. -->
+    <path d="M12 225h426v226H12z" fill="url(#lowerPanel)"/>
+
+    <!-- Fixed artificial-horizon reference. -->
+    <g fill="none" stroke="#f0f2ee" stroke-linecap="square">
+      <path d="M18 225h126 M306 225h126" stroke-width="5"/>
+      <path d="M38 215v20 M412 215v20" stroke-width="4"/>
+      <path d="M67 225h28 M355 225h28" stroke-width="8"/>
+    </g>
+
+    <!-- Fixed head-on aircraft silhouette. -->
+    <g fill="#f1f3ef">
+      <path d="M219 213l2-28 4-18 4 18 2 28z"/>
+      <path d="M198 198l21-6h12l21 6-4 8h-46z"/>
+      <path d="M130 210l77-5 10-10h16l10 10 77 5-10 11-69-3-8 16h-16l-8-16-69 3z"/>
+      <ellipse cx="225" cy="220" rx="17" ry="23"/>
+    </g>
+
+    <!-- The broad, two-blade propeller is the sweep-seconds indicator. -->
+    <g transform="rotate(38 225 225)">
+      <path d="M224 217c23 0 43-7 65-18 7-4 14-2 17 4 3 7-1 13-8 16-26 11-49 14-72 12-23 2-43 9-65 20-7 4-14 2-17-4-3-7 1-13 8-16 26-11 49-14 72-12z"
+            fill="#f8f8f3" stroke="#171a1b" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+    <circle cx="225" cy="225" r="10" fill="#f7f8f3" stroke="#171a1b" stroke-width="3"/>
+
+    <!-- Functional disc labels and fixed lower reference marks. -->
+    <g fill="#e8ebe8" font-family="Roboto Condensed, Arial Narrow, sans-serif"
+       font-size="28" font-weight="400" text-anchor="middle">
+      <text x="135" y="329">H</text>
+      <text x="315" y="329">M</text>
+    </g>
+    <g fill="none" stroke="#e9ece8" stroke-width="5" stroke-linecap="square">
+      <path d="M74 310l30-13"/>
+      <path d="M346 297l30 13"/>
+    </g>
+    <path d="M225 378l-7 12h14z" fill="#aeb4b3"/>
+  </g>
+
+  <circle cx="225" cy="225" r="207" fill="none" stroke="#777f82" stroke-width="2"/>
+</svg>

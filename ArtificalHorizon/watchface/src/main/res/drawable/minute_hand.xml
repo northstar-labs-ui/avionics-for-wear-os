@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="360dp"
+    android:viewportWidth="30"
+    android:viewportHeight="360">
+
+    <!-- Dark edge: a restrained outline around the tapered minute needle. -->
+    <path
+        android:fillColor="#343A3C"
+        android:pathData="M15,12 L20.5,173.5 L20,179 L17.5,184 L12.5,184 L10,179 L9.5,173.5 Z" />
+
+    <!-- Pale instrument paint inset from the edge. -->
+    <path
+        android:fillColor="#E7EEEE"
+        android:pathData="M15,18 L18.7,174 L18.25,178.25 L16.5,181.75 L13.5,181.75 L11.75,178.25 L11.3,174 Z" />
+</vector>

@@ -1,0 +1,15 @@
+Aircraft vector notices
+=======================
+
+This watch face uses the Font Awesome Free 6.5.2 "plane-up" and
+"jet-fighter-up" icons by Fonticons, Inc. (https://fontawesome.com).
+
+The icons are licensed under the Creative Commons Attribution 4.0
+International license:
+https://creativecommons.org/licenses/by/4.0/
+
+Changes: the original SVG path data was recolored, placed inside taller
+transparent viewports so each aircraft rotates around the center of the watch
+face, and rasterized into the PNG resources required by Watch Face Format's
+packaging tools. The editable SVG masters are retained in the artwork folder;
+the silhouette geometry is unchanged.

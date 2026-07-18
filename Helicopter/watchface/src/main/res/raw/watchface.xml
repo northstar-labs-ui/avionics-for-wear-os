@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Original, branding-free landing-zone watch face.
+
+    The four moving assets are Android vector drawables. Keep each on a
+    450 x 450 viewport, center the rotation point at (225, 225), and author
+    its zero-angle orientation for 12 o'clock:
+      * hour_notch.xml        -> hour
+      * hour_h.xml            -> hour
+      * helicopter_minute.xml -> minute
+      * rotor_second.xml      -> seconds, smooth sweep
+-->
+<WatchFace
+    width="450"
+    height="450"
+    clipShape="CIRCLE">
+    <Metadata
+        key="CLOCK_TYPE"
+        value="ANALOG" />
+    <Metadata
+        key="PREVIEW_TIME"
+        value="23:48:32" />
+
+    <Scene>
+        <!-- AMOLED base and restrained concentric depth. -->
+        <PartDraw
+            name="interactive_base"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="0" />
+            <Ellipse x="0" y="0" width="450" height="450">
+                <Fill color="#ff050708" />
+            </Ellipse>
+            <Ellipse x="14" y="14" width="422" height="422">
+                <Fill color="#ff11171a" />
+            </Ellipse>
+            <Ellipse x="42" y="42" width="366" height="366">
+                <Fill color="#ff0b0f11" />
+            </Ellipse>
+            <Ellipse x="50" y="50" width="350" height="350">
+                <Fill color="#ff0d1113" />
+            </Ellipse>
+        </PartDraw>
+
+        <!-- Ambient gets a pure-black field and one low-energy guide ring. -->
+        <PartDraw
+            name="ambient_base"
+            x="0"
+            y="0"
+            width="450"
+            height="450"
+            alpha="0">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="255" />
+            <Ellipse x="0" y="0" width="450" height="450">
+                <Fill color="#ff000000" />
+            </Ellipse>
+            <Ellipse x="68" y="68" width="314" height="314">
+                <Stroke color="#ff303638" thickness="2" />
+            </Ellipse>
+        </PartDraw>
+
+        <!-- Generic helipad ring; intentionally not copied branding. -->
+        <Group
+            name="landing_zone"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="0" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Ellipse x="68" y="68" width="314" height="314">
+                    <Stroke color="#ffe4c300" thickness="8" cap="BUTT" />
+                </Ellipse>
+
+                <Ellipse x="48" y="48" width="354" height="354">
+                    <Stroke color="#ff343c3f" thickness="3" />
+                </Ellipse>
+            </PartDraw>
+        </Group>
+
+        <!-- A compact dashed vector rail gives all 60 minute positions. -->
+        <PartDraw
+            name="minute_rail"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant
+                mode="AMBIENT"
+                target="alpha"
+                value="0" />
+            <Arc
+                centerX="225"
+                centerY="225"
+                width="410"
+                height="410"
+                startAngle="0"
+                endAngle="360">
+                <Stroke
+                    color="#ff8d979a"
+                    thickness="3"
+                    dashIntervals="3 18.47"
+                    cap="BUTT" />
+            </Arc>
+        </PartDraw>
+
+        <!-- Twelve high-contrast radial indices. -->
+        <Group
+            name="major_indices"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <PartDraw x="0" y="0" width="450" height="450" angle="0" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="221" y="18" width="8" height="28" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="30" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="222" y="22" width="6" height="23" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="60" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="222" y="22" width="6" height="23" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="90" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="221" y="18" width="8" height="28" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="120" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="222" y="22" width="6" height="23" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="150" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="222" y="22" width="6" height="23" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="180" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="221" y="18" width="8" height="28" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="210" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="222" y="22" width="6" height="23" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="240" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="222" y="22" width="6" height="23" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="270" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="221" y="18" width="8" height="28" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="300" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="222" y="22" width="6" height="23" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="330" pivotX="0.5" pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="88" />
+                <RoundRectangle x="222" y="22" width="6" height="23" cornerRadiusX="2" cornerRadiusY="2"><Fill color="#fff0f3f1" /></RoundRectangle>
+            </PartDraw>
+        </Group>
+
+        <!--
+            Time mechanics. Every asset fills the same 450-square coordinate
+            space, so swapping in the final helicopter requires no pivot math.
+        -->
+        <AnalogClock x="0" y="0" width="450" height="450">
+            <HourHand
+                resource="hour_notch"
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="104" />
+            </HourHand>
+            <HourHand
+                resource="hour_h"
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+            </HourHand>
+            <MinuteHand
+                resource="helicopter_minute"
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="112" />
+            </MinuteHand>
+            <SecondHand
+                resource="rotor_second"
+                x="0"
+                y="0"
+                width="450"
+                height="450"
+                pivotX="0.5"
+                pivotY="0.5">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+                <Sweep frequency="SYNC_TO_DEVICE" />
+            </SecondHand>
+        </AnalogClock>
+    </Scene>
+</WatchFace>

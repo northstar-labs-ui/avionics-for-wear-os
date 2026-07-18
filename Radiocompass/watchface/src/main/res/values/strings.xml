@@ -1,0 +1,5 @@
+<resources>
+    <string name="watch_face_name">Radiocompass</string>
+    <string name="left_complication">Left dial complication</string>
+    <string name="right_complication">Right dial complication</string>
+</resources>

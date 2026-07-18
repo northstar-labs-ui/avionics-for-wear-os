@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace
+    width="450"
+    height="450">
+
+    <Metadata
+        key="CLOCK_TYPE"
+        value="ANALOG" />
+    <Metadata
+        key="PREVIEW_TIME"
+        value="10:09:33" />
+
+    <Scene backgroundColor="#ff000000">
+        <!--
+            Stepped bezel surrounding a true-black OLED dial. The outer metal
+            ellipse overscans the design canvas by four pixels so fractional
+            device scaling and edge antialiasing can never expose a black gutter.
+        -->
+        <PartDraw
+            name="dial"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Ellipse x="-4" y="-4" width="458" height="458">
+                <Fill color="#25282a" />
+            </Ellipse>
+            <Ellipse x="7" y="7" width="436" height="436">
+                <Fill color="#090b0c" />
+            </Ellipse>
+            <Ellipse x="13" y="13" width="424" height="424">
+                <Fill color="#090b0c" />
+            </Ellipse>
+            <Ellipse x="20" y="20" width="410" height="410">
+                <Fill color="#000000" />
+            </Ellipse>
+            <Ellipse x="25" y="25" width="400" height="400">
+                <Stroke color="#34383a" thickness="2" />
+            </Ellipse>
+            <Ellipse x="31" y="31" width="388" height="388">
+                <Stroke color="#08090a" thickness="3" />
+            </Ellipse>
+        </PartDraw>
+
+        <!-- The 48 one-minute marks disappear in ambient mode. -->
+        <Group
+            name="minor_ticks"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <PartDraw x="0" y="0" width="450" height="450" angle="6" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="12" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="18" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="24" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="36" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="42" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="48" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="54" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="66" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="72" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="78" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="84" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="96" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="102" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="108" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="114" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="126" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="132" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="138" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="144" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="156" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="162" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="168" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="174" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="186" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="192" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="198" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="204" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="216" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="222" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="228" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="234" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="246" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="252" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="258" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="264" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="276" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="282" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="288" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="294" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="306" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="312" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="318" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="324" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="336" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="342" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="348" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="354" pivotX="0.5" pivotY="0.5">
+                <Line startX="225" startY="34" endX="225" endY="53"><Stroke color="#d9ddd9" thickness="3" cap="SQUARE" /></Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Broad five-minute markers remain visible in ambient mode. -->
+        <Group
+            name="major_ticks"
+            x="0"
+            y="0"
+            width="450"
+            height="450">
+            <PartDraw x="0" y="0" width="450" height="450" angle="0" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="30" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="60" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="90" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="120" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="150" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="180" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="210" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="240" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="270" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="300" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+            <PartDraw x="0" y="0" width="450" height="450" angle="330" pivotX="0.5" pivotY="0.5"><Line startX="225" startY="41" endX="225" endY="65"><Stroke color="#e7e7df" thickness="8" cap="SQUARE" /></Line></PartDraw>
+        </Group>
+
+        <!-- Inward index triangle at twelve. -->
+        <PartDraw x="0" y="0" width="450" height="450">
+            <Line startX="225" startY="25" endX="225" endY="42"><Stroke color="#050607" thickness="31" cap="SQUARE" /></Line>
+            <Line startX="225" startY="25" endX="225" endY="41"><Stroke color="#e7e7df" thickness="21" cap="SQUARE" /></Line>
+            <Line startX="209" startY="21" endX="225" endY="48"><Stroke color="#050607" thickness="12" cap="ROUND" /></Line>
+            <Line startX="241" startY="21" endX="225" endY="48"><Stroke color="#050607" thickness="12" cap="ROUND" /></Line>
+            <Line startX="209" startY="21" endX="241" endY="21"><Stroke color="#050607" thickness="12" cap="ROUND" /></Line>
+            <Line startX="210" startY="22" endX="225" endY="46"><Stroke color="#e7e7df" thickness="7" cap="ROUND" /></Line>
+            <Line startX="240" startY="22" endX="225" endY="46"><Stroke color="#e7e7df" thickness="7" cap="ROUND" /></Line>
+            <Line startX="210" startY="22" endX="240" endY="22"><Stroke color="#e7e7df" thickness="7" cap="ROUND" /></Line>
+        </PartDraw>
+
+        <!-- Outer minute numerals. -->
+        <Group name="minute_labels" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <PartText x="280" y="27" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[05]]></Font></Text></PartText>
+            <PartText x="347" y="76" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[10]]></Font></Text></PartText>
+            <PartText x="383" y="166" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[15]]></Font></Text></PartText>
+            <PartText x="359" y="270" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[20]]></Font></Text></PartText>
+            <PartText x="293" y="355" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[25]]></Font></Text></PartText>
+            <PartText x="203" y="386" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[30]]></Font></Text></PartText>
+            <PartText x="113" y="355" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[35]]></Font></Text></PartText>
+            <PartText x="45" y="270" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[40]]></Font></Text></PartText>
+            <PartText x="21" y="166" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[45]]></Font></Text></PartText>
+            <PartText x="57" y="76" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[50]]></Font></Text></PartText>
+            <PartText x="125" y="27" width="45" height="27"><Text><Font family="SYNC_TO_DEVICE" size="18" weight="BOLD" color="#bfc5c8"><![CDATA[55]]></Font></Text></PartText>
+        </Group>
+
+        <!-- Upright aviation-style hour numerals. -->
+        <Group name="hour_numerals" x="0" y="0" width="450" height="450">
+            <PartText x="197" y="76" width="56" height="45"><Text><Font family="SYNC_TO_DEVICE" size="38" weight="BOLD" color="#e7e7df"><![CDATA[12]]></Font></Text></PartText>
+            <PartText x="269" y="91" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[1]]></Font></Text></PartText>
+            <PartText x="322" y="143" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[2]]></Font></Text></PartText>
+            <PartText x="340" y="204" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[3]]></Font></Text></PartText>
+            <PartText x="322" y="268" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[4]]></Font></Text></PartText>
+            <PartText x="269" y="320" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[5]]></Font></Text></PartText>
+            <PartText x="204" y="338" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[6]]></Font></Text></PartText>
+            <PartText x="139" y="320" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[7]]></Font></Text></PartText>
+            <PartText x="86" y="268" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[8]]></Font></Text></PartText>
+            <PartText x="68" y="204" width="42" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[9]]></Font></Text></PartText>
+            <PartText x="86" y="143" width="50" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[10]]></Font></Text></PartText>
+            <PartText x="137" y="91" width="52" height="44"><Text><Font family="SYNC_TO_DEVICE" size="36" weight="BOLD" color="#e7e7df"><![CDATA[11]]></Font></Text></PartText>
+        </Group>
+
+        <!-- Neutral project branding, intentionally independent of the reference brand. -->
+        <Group name="dial_copy" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <PartText x="120" y="148" width="210" height="30">
+                <Text><Font family="SYNC_TO_DEVICE" size="20" weight="BOLD" color="#dfe1dc"><![CDATA[RADIOCOMPASS]]></Font></Text>
+            </PartText>
+            <PartText x="175" y="283" width="100" height="25">
+                <Text><Font family="SYNC_TO_DEVICE" size="14" color="#dfe1dc"><![CDATA[RC // 01]]></Font></Text>
+            </PartText>
+            <PartText x="137" y="371" width="176" height="20">
+                <Text><Font family="SYNC_TO_DEVICE" size="11" color="#bfc5c8"><![CDATA[VECTOR FLIGHT INSTRUMENT]]></Font></Text>
+            </PartText>
+        </Group>
+
+        <!-- Live 4:30 date aperture. -->
+        <Group name="date_window" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="150" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Ellipse x="304" y="287" width="44" height="36"><Fill color="#070809" /></Ellipse>
+                <Ellipse x="305" y="288" width="42" height="34"><Stroke color="#34383a" thickness="2" /></Ellipse>
+            </PartDraw>
+            <PartText x="307" y="289" width="38" height="31">
+                <Text>
+                    <Font family="SYNC_TO_DEVICE" size="21" weight="BOLD" color="#e7e7df">
+                        <Template><![CDATA[%s]]><Parameter expression="[DAY]" /></Template>
+                    </Font>
+                </Text>
+            </PartText>
+        </Group>
+
+        <!-- User-editable circular complication at nine o'clock. -->
+        <ComplicationSlot
+            slotId="1"
+            displayName="@string/left_complication"
+            supportedTypes="SHORT_TEXT RANGED_VALUE EMPTY"
+            isCustomizable="TRUE"
+            x="48"
+            y="180"
+            width="90"
+            height="90">
+            <BoundingOval x="0" y="0" width="90" height="90" outlinePadding="4" />
+            <Complication type="SHORT_TEXT">
+                <PartDraw x="0" y="0" width="90" height="90">
+                    <Variant mode="AMBIENT" target="alpha" value="130" />
+                    <Ellipse x="5" y="5" width="80" height="80"><Fill color="#121416" /></Ellipse>
+                    <Ellipse x="7" y="7" width="76" height="76"><Stroke color="#62676a" thickness="2" /></Ellipse>
+                </PartDraw>
+                <PartText x="10" y="24" width="70" height="42">
+                    <Variant mode="AMBIENT" target="alpha" value="150" />
+                    <Text ellipsis="TRUE">
+                        <Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#e7e7df">
+                            <Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" /></Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Complication>
+            <Complication type="RANGED_VALUE">
+                <PartDraw x="0" y="0" width="90" height="90">
+                    <Variant mode="AMBIENT" target="alpha" value="130" />
+                    <Ellipse x="5" y="5" width="80" height="80"><Fill color="#121416" /></Ellipse>
+                    <Arc centerX="45" centerY="45" width="76" height="76" startAngle="0" endAngle="0">
+                        <Transform target="endAngle" value="clamp(([COMPLICATION.RANGED_VALUE_VALUE] - [COMPLICATION.RANGED_VALUE_MIN]) / ([COMPLICATION.RANGED_VALUE_MAX] - [COMPLICATION.RANGED_VALUE_MIN]), 0, 1) * 360" />
+                        <Stroke color="#bfc5c8" thickness="5" cap="ROUND" />
+                    </Arc>
+                </PartDraw>
+                <PartText x="12" y="25" width="66" height="40">
+                    <Variant mode="AMBIENT" target="alpha" value="150" />
+                    <Text ellipsis="TRUE">
+                        <Font family="SYNC_TO_DEVICE" size="20" weight="BOLD" color="#e7e7df">
+                            <Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" /></Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Complication>
+            <Complication type="EMPTY" />
+        </ComplicationSlot>
+
+        <!-- User-editable circular complication at three o'clock. -->
+        <ComplicationSlot
+            slotId="2"
+            displayName="@string/right_complication"
+            supportedTypes="SHORT_TEXT RANGED_VALUE EMPTY"
+            isCustomizable="TRUE"
+            x="312"
+            y="180"
+            width="90"
+            height="90">
+            <BoundingOval x="0" y="0" width="90" height="90" outlinePadding="4" />
+            <Complication type="SHORT_TEXT">
+                <PartDraw x="0" y="0" width="90" height="90">
+                    <Variant mode="AMBIENT" target="alpha" value="130" />
+                    <Ellipse x="5" y="5" width="80" height="80"><Fill color="#121416" /></Ellipse>
+                    <Ellipse x="7" y="7" width="76" height="76"><Stroke color="#62676a" thickness="2" /></Ellipse>
+                </PartDraw>
+                <PartText x="10" y="24" width="70" height="42">
+                    <Variant mode="AMBIENT" target="alpha" value="150" />
+                    <Text ellipsis="TRUE">
+                        <Font family="SYNC_TO_DEVICE" size="22" weight="BOLD" color="#e7e7df">
+                            <Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" /></Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Complication>
+            <Complication type="RANGED_VALUE">
+                <PartDraw x="0" y="0" width="90" height="90">
+                    <Variant mode="AMBIENT" target="alpha" value="130" />
+                    <Ellipse x="5" y="5" width="80" height="80"><Fill color="#121416" /></Ellipse>
+                    <Arc centerX="45" centerY="45" width="76" height="76" startAngle="0" endAngle="0">
+                        <Transform target="endAngle" value="clamp(([COMPLICATION.RANGED_VALUE_VALUE] - [COMPLICATION.RANGED_VALUE_MIN]) / ([COMPLICATION.RANGED_VALUE_MAX] - [COMPLICATION.RANGED_VALUE_MIN]), 0, 1) * 360" />
+                        <Stroke color="#bfc5c8" thickness="5" cap="ROUND" />
+                    </Arc>
+                </PartDraw>
+                <PartText x="12" y="25" width="66" height="40">
+                    <Variant mode="AMBIENT" target="alpha" value="150" />
+                    <Text ellipsis="TRUE">
+                        <Font family="SYNC_TO_DEVICE" size="20" weight="BOLD" color="#e7e7df">
+                            <Template><![CDATA[%s]]><Parameter expression="[COMPLICATION.TEXT]" /></Template>
+                        </Font>
+                    </Text>
+                </PartText>
+            </Complication>
+            <Complication type="EMPTY" />
+        </ComplicationSlot>
+
+        <!-- Dimmed, fully constructed hands used only in ambient mode. -->
+        <Group name="ambient_hour_hand" x="0" y="0" width="450" height="450" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Variant mode="AMBIENT" target="alpha" value="105" />
+            <Transform target="angle" value="[HOUR_0_11_MINUTE] * 30" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <!-- Near-black keyline. -->
+                <Line startX="225" startY="234" endX="225" endY="105"><Stroke color="#090b0c" thickness="17" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="350"><Stroke color="#090b0c" thickness="15" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="205" endY="115"><Stroke color="#090b0c" thickness="17" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="245" endY="115"><Stroke color="#090b0c" thickness="17" cap="ROUND" /></Line>
+                <!-- Gunmetal chassis. -->
+                <Line startX="225" startY="234" endX="225" endY="105"><Stroke color="#62676a" thickness="13" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="350"><Stroke color="#62676a" thickness="11" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="205" endY="115"><Stroke color="#62676a" thickness="13" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="245" endY="115"><Stroke color="#62676a" thickness="13" cap="ROUND" /></Line>
+                <!-- Centered luminous inlay. -->
+                <Line startX="225" startY="234" endX="225" endY="105"><Stroke color="#ff941f" thickness="4" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="350"><Stroke color="#ff941f" thickness="4" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="205" endY="115"><Stroke color="#ff941f" thickness="4" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="245" endY="115"><Stroke color="#ff941f" thickness="4" cap="ROUND" /></Line>
+            </PartDraw>
+        </Group>
+        <Group name="ambient_minute_hand" x="0" y="0" width="450" height="450" pivotX="0.5" pivotY="0.5" alpha="0">
+            <Variant mode="AMBIENT" target="alpha" value="90" />
+            <Transform target="angle" value="[MINUTE_SECOND] * 6" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <!-- Near-black keyline. -->
+                <Line startX="225" startY="236" endX="225" endY="91"><Stroke color="#090b0c" thickness="15" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="355"><Stroke color="#090b0c" thickness="13" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="206" endY="103"><Stroke color="#090b0c" thickness="15" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="244" endY="103"><Stroke color="#090b0c" thickness="15" cap="ROUND" /></Line>
+                <!-- Gunmetal chassis. -->
+                <Line startX="225" startY="236" endX="225" endY="91"><Stroke color="#62676a" thickness="11" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="355"><Stroke color="#62676a" thickness="9" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="206" endY="103"><Stroke color="#62676a" thickness="11" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="244" endY="103"><Stroke color="#62676a" thickness="11" cap="ROUND" /></Line>
+                <!-- Centered luminous inlay. -->
+                <Line startX="225" startY="236" endX="225" endY="91"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="355"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="206" endY="103"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="244" endY="103"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+
+                <!-- On-axis radio roundel: keyline, metal, lume, dark face. -->
+                <Ellipse x="203" y="131" width="44" height="44"><Fill color="#090b0c" /></Ellipse>
+                <Ellipse x="206" y="134" width="38" height="38"><Fill color="#62676a" /></Ellipse>
+                <Ellipse x="209" y="137" width="32" height="32"><Fill color="#b5f51a" /></Ellipse>
+                <Ellipse x="212" y="140" width="26" height="26"><Fill color="#111416" /></Ellipse>
+                <Line startX="228" startY="144" endX="221" endY="152"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="221" startY="152" endX="228" endY="152"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="228" startY="152" endX="221" endY="162"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+            </PartDraw>
+        </Group>
+
+        <!-- The seconds needle sits beneath both structural hands. Every layer shares x=225. -->
+        <Group name="second_hand" x="0" y="0" width="450" height="450" pivotX="0.5" pivotY="0.5">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <Transform target="angle" value="[SECOND_MILLISECOND] * 6" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Line startX="225" startY="247" endX="225" endY="45"><Stroke color="#090b0c" thickness="7" cap="ROUND" /></Line>
+                <Line startX="225" startY="247" endX="225" endY="45"><Stroke color="#62676a" thickness="5" cap="ROUND" /></Line>
+                <Line startX="225" startY="247" endX="225" endY="45"><Stroke color="#54e052" thickness="2" cap="ROUND" /></Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Gunmetal hour hand with a centered orange inlay and aviation delta tip. -->
+        <Group name="hour_hand" x="0" y="0" width="450" height="450" pivotX="0.5" pivotY="0.5">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <Transform target="angle" value="[HOUR_0_11_MINUTE] * 30" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <!-- One shared silhouette centerline: keyline first... -->
+                <Line startX="225" startY="234" endX="225" endY="105"><Stroke color="#090b0c" thickness="17" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="350"><Stroke color="#090b0c" thickness="15" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="205" endY="115"><Stroke color="#090b0c" thickness="17" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="245" endY="115"><Stroke color="#090b0c" thickness="17" cap="ROUND" /></Line>
+                <!-- ...then a visible gray chassis... -->
+                <Line startX="225" startY="234" endX="225" endY="105"><Stroke color="#62676a" thickness="13" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="350"><Stroke color="#62676a" thickness="11" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="205" endY="115"><Stroke color="#62676a" thickness="13" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="245" endY="115"><Stroke color="#62676a" thickness="13" cap="ROUND" /></Line>
+                <!-- ...and a narrow, perfectly centered orange inlay. -->
+                <Line startX="225" startY="234" endX="225" endY="105"><Stroke color="#ff941f" thickness="4" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="350"><Stroke color="#ff941f" thickness="4" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="205" endY="115"><Stroke color="#ff941f" thickness="4" cap="ROUND" /></Line>
+                <Line startX="225" startY="89" endX="245" endY="115"><Stroke color="#ff941f" thickness="4" cap="ROUND" /></Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Gunmetal minute hand with centered lime inlay and radio-instrument roundel. -->
+        <Group name="minute_hand" x="0" y="0" width="450" height="450" pivotX="0.5" pivotY="0.5">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <Transform target="angle" value="[MINUTE_SECOND] * 6" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <!-- Shared centerline keyline. -->
+                <Line startX="225" startY="236" endX="225" endY="91"><Stroke color="#090b0c" thickness="15" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="355"><Stroke color="#090b0c" thickness="13" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="206" endY="103"><Stroke color="#090b0c" thickness="15" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="244" endY="103"><Stroke color="#090b0c" thickness="15" cap="ROUND" /></Line>
+                <!-- Gray chassis. -->
+                <Line startX="225" startY="236" endX="225" endY="91"><Stroke color="#62676a" thickness="11" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="355"><Stroke color="#62676a" thickness="9" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="206" endY="103"><Stroke color="#62676a" thickness="11" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="244" endY="103"><Stroke color="#62676a" thickness="11" cap="ROUND" /></Line>
+                <!-- Centered lime inlay. -->
+                <Line startX="225" startY="236" endX="225" endY="91"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="225" startY="219" endX="225" endY="355"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="206" endY="103"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="225" startY="75" endX="244" endY="103"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+
+                <!-- The roundel masks the shaft and is concentric at x=225. -->
+                <Ellipse x="203" y="131" width="44" height="44"><Fill color="#090b0c" /></Ellipse>
+                <Ellipse x="206" y="134" width="38" height="38"><Fill color="#62676a" /></Ellipse>
+                <Ellipse x="209" y="137" width="32" height="32"><Fill color="#b5f51a" /></Ellipse>
+                <Ellipse x="212" y="140" width="26" height="26"><Fill color="#111416" /></Ellipse>
+                <Line startX="228" startY="144" endX="221" endY="152"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="221" startY="152" endX="228" endY="152"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+                <Line startX="228" startY="152" endX="221" endY="162"><Stroke color="#b5f51a" thickness="3" cap="ROUND" /></Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Mechanical center cap above every moving layer. -->
+        <PartDraw name="center_cap" x="0" y="0" width="450" height="450">
+            <Ellipse x="208" y="208" width="34" height="34"><Fill color="#090b0c" /></Ellipse>
+            <Ellipse x="211" y="211" width="28" height="28"><Fill color="#62676a" /></Ellipse>
+            <Ellipse x="214" y="214" width="22" height="22"><Fill color="#171a1b" /></Ellipse>
+            <Ellipse x="221" y="221" width="8" height="8"><Fill color="#777c7e" /></Ellipse>
+        </PartDraw>
+    </Scene>
+</WatchFace>

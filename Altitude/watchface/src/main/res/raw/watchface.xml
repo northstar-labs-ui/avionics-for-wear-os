@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+    <Metadata key="CLOCK_TYPE" value="ANALOG" />
+    <Metadata key="PREVIEW_TIME" value="10:08:32" />
+
+    <Scene backgroundColor="#08090A">
+        <!-- Layered vector bezel and charcoal instrument dial. -->
+        <Group name="dial_structure" x="0" y="0" width="450" height="450">
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Ellipse x="1" y="1" width="448" height="448">
+                    <Fill color="#252729" />
+                </Ellipse>
+                <Ellipse x="1" y="1" width="448" height="448">
+                    <Stroke color="#73777A" thickness="2" />
+                </Ellipse>
+                <Ellipse x="7" y="7" width="436" height="436">
+                    <Fill color="#0B0C0D" />
+                </Ellipse>
+                <Ellipse x="7" y="7" width="436" height="436">
+                    <Stroke color="#080909" thickness="6" />
+                </Ellipse>
+                <Ellipse x="14" y="14" width="422" height="422">
+                    <Fill color="#1A1C1D" />
+                </Ellipse>
+                <Ellipse x="14" y="14" width="422" height="422">
+                    <Stroke color="#5F6264" thickness="2" />
+                </Ellipse>
+                <Ellipse x="22" y="22" width="406" height="406">
+                    <Fill color="#303234" />
+                </Ellipse>
+                <Ellipse x="22" y="22" width="406" height="406">
+                    <Stroke color="#070809" thickness="6" />
+                </Ellipse>
+                <Ellipse x="28" y="28" width="394" height="394">
+                    <Stroke color="#676A6B" thickness="1" />
+                </Ellipse>
+            </PartDraw>
+        </Group>
+
+        <Group name="bezel_highlights" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Arc centerX="225" centerY="225" width="434" height="434"
+                    startAngle="300" endAngle="60">
+                    <Stroke color="#8A8D8F" thickness="1.5" cap="ROUND" />
+                </Arc>
+                <Arc centerX="225" centerY="225" width="434" height="434"
+                    startAngle="120" endAngle="240">
+                    <Stroke color="#030404" thickness="2.5" cap="ROUND" />
+                </Arc>
+            </PartDraw>
+        </Group>
+
+        <!-- Sixty crisp vector minute markers; the twelve wider markers denote hours. -->
+        <Group name="minute_track" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="210" />
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="0">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="6">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="12">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="18">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="24">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="30">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="36">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="42">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="48">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="54">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="60">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="66">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="72">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="78">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="84">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="90">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="96">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="102">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="108">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="114">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="120">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="126">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="132">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="138">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="144">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="150">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="156">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="162">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="168">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="174">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="180">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="186">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="192">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="198">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="204">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="210">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="216">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="222">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="228">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="234">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="240">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="246">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="252">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="258">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="264">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="270">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="276">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="282">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="288">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="294">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="300">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="306">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="312">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="318">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="324">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="220" y="0" width="10" height="450" pivotX="0.5" pivotY="0.5" angle="330">
+                <Rectangle x="1" y="30" width="8" height="24">
+                    <Fill color="#F4F4EF" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="336">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="342">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="348">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+            <PartDraw x="222" y="0" width="6" height="450" pivotX="0.5" pivotY="0.5" angle="354">
+                <Rectangle x="2" y="35" width="2" height="15">
+                    <Fill color="#E2E2DE" />
+                </Rectangle>
+            </PartDraw>
+        </Group>
+
+        <!-- Small recessed dial fasteners, distinct from the photographed case screws. -->
+        <Group name="dial_fasteners" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Ellipse x="91" y="91" width="15" height="15"><Fill color="#141617" /></Ellipse>
+                <Ellipse x="91" y="91" width="15" height="15"><Stroke color="#050606" thickness="1.5" /></Ellipse>
+                <Line startX="95" startY="103" endX="102" endY="94"><Stroke color="#56595A" thickness="1.2" cap="ROUND" /></Line>
+
+                <Ellipse x="344" y="91" width="15" height="15"><Fill color="#141617" /></Ellipse>
+                <Ellipse x="344" y="91" width="15" height="15"><Stroke color="#050606" thickness="1.5" /></Ellipse>
+                <Line startX="348" startY="103" endX="355" endY="94"><Stroke color="#56595A" thickness="1.2" cap="ROUND" /></Line>
+
+                <Ellipse x="344" y="344" width="15" height="15"><Fill color="#141617" /></Ellipse>
+                <Ellipse x="344" y="344" width="15" height="15"><Stroke color="#050606" thickness="1.5" /></Ellipse>
+                <Line startX="348" startY="356" endX="355" endY="347"><Stroke color="#56595A" thickness="1.2" cap="ROUND" /></Line>
+
+                <Ellipse x="91" y="344" width="15" height="15"><Fill color="#141617" /></Ellipse>
+                <Ellipse x="91" y="344" width="15" height="15"><Stroke color="#050606" thickness="1.5" /></Ellipse>
+                <Line startX="95" startY="356" endX="102" endY="347"><Stroke color="#56595A" thickness="1.2" cap="ROUND" /></Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Rolling date drum: yesterday, today, and tomorrow from live WFF date sources. -->
+        <Group name="date_drum" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Arc centerX="225" centerY="225" width="224" height="224"
+                    startAngle="45" endAngle="135">
+                    <Stroke color="#F4F4EF" thickness="3" cap="ROUND" />
+                </Arc>
+                <Arc centerX="225" centerY="225" width="124" height="124"
+                    startAngle="45" endAngle="135">
+                    <Stroke color="#F4F4EF" thickness="2" cap="ROUND" />
+                </Arc>
+                <Line startX="269" startY="181" endX="304" endY="146">
+                    <Stroke color="#F4F4EF" thickness="2.5" cap="ROUND" />
+                </Line>
+                <Line startX="269" startY="269" endX="304" endY="304">
+                    <Stroke color="#F4F4EF" thickness="2.5" cap="ROUND" />
+                </Line>
+                <Line startX="285" startY="202" endX="333" endY="202">
+                    <Stroke color="#F4F4EF" thickness="1.3" cap="BUTT" />
+                </Line>
+                <Line startX="285" startY="248" endX="333" endY="248">
+                    <Stroke color="#F4F4EF" thickness="1.3" cap="BUTT" />
+                </Line>
+            </PartDraw>
+
+            <PartText x="274" y="164" width="50" height="32">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="20" weight="LIGHT" width="CONDENSED" color="#BFC0BC">
+                        <Template>%s<Parameter expression="numberFormat(&quot;00&quot;, [DAY] &gt; 1 ? [DAY] - 1 : ([MONTH] == 3 ? (([YEAR] % 400 == 0 || ([YEAR] % 4 == 0 &amp;&amp; [YEAR] % 100 != 0)) ? 29 : 28) : ([MONTH] == 5 || [MONTH] == 7 || [MONTH] == 10 || [MONTH] == 12 ? 30 : 31)))" /></Template>
+                    </Font>
+                </Text>
+            </PartText>
+            <PartText x="285" y="207" width="54" height="36">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="28" weight="LIGHT" width="CONDENSED" color="#F4F4EF">
+                        <Template>%s<Parameter expression="[DAY_Z]" /></Template>
+                    </Font>
+                </Text>
+            </PartText>
+            <PartText x="274" y="254" width="50" height="32">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="20" weight="LIGHT" width="CONDENSED" color="#BFC0BC">
+                        <Template>%s<Parameter expression="numberFormat(&quot;00&quot;, [DAY] == [DAYS_IN_MONTH] ? 1 : [DAY] + 1)" /></Template>
+                    </Font>
+                </Text>
+            </PartText>
+        </Group>
+
+        <!-- The reference's lower instrument hatch, redrawn as five vector strokes. -->
+        <Group name="hatch_motif" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Line startX="172" startY="312" endX="219" endY="340"><Stroke color="#F4F4EF" thickness="10" cap="BUTT" /></Line>
+                <Line startX="181" startY="297" endX="238" endY="334"><Stroke color="#F4F4EF" thickness="10" cap="BUTT" /></Line>
+                <Line startX="192" startY="284" endX="255" endY="327"><Stroke color="#F4F4EF" thickness="10" cap="BUTT" /></Line>
+                <Line startX="205" startY="273" endX="270" endY="317"><Stroke color="#F4F4EF" thickness="10" cap="BUTT" /></Line>
+                <Line startX="220" startY="265" endX="281" endY="306"><Stroke color="#F4F4EF" thickness="10" cap="BUTT" /></Line>
+            </PartDraw>
+        </Group>
+
+        <!-- Upright industrial hour numerals. No logo or manufacturer branding is used. -->
+        <Group name="hour_numerals" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="220" />
+            <PartText x="180" y="52" width="90" height="64">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[12]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="267" y="66" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[1]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="321" y="119" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[2]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="343" y="190" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[3]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="321" y="266" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[4]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="267" y="320" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[5]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="192" y="343" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[6]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="117" y="320" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[7]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="63" y="266" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[8]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="41" y="190" width="66" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="52" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[9]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="52" y="119" width="90" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="50" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[10]]></Font>
+                </Text>
+            </PartText>
+            <PartText x="106" y="66" width="90" height="70">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="50" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="-0.02" color="#F4F4EF"><![CDATA[11]]></Font>
+                </Text>
+            </PartText>
+        </Group>
+
+        <Group name="instrument_label" x="0" y="0" width="450" height="450">
+            <PartText x="101" y="198" width="90" height="54">
+                <Text align="CENTER" verticalAlign="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="31" weight="LIGHT" width="CONDENSED"
+                        letterSpacing="0.08" color="#F4F4EF"><![CDATA[ALT]]></Font>
+                </Text>
+            </PartText>
+        </Group>
+
+        <!-- VectorDrawable hands rotated by the WFF analog clock. -->
+        <AnalogClock x="0" y="0" width="450" height="450">
+            <HourHand resource="hour_hand" x="201" y="48" width="54" height="220"
+                pivotX="0.5" pivotY="0.8181818" tintColor="#99000000">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+            </HourHand>
+            <MinuteHand resource="minute_hand" x="204" y="23" width="48" height="255"
+                pivotX="0.5" pivotY="0.8039216" tintColor="#99000000">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+            </MinuteHand>
+
+            <HourHand resource="hour_hand" x="198" y="45" width="54" height="220"
+                pivotX="0.5" pivotY="0.8181818" />
+            <MinuteHand resource="minute_hand" x="201" y="20" width="48" height="255"
+                pivotX="0.5" pivotY="0.8039216" />
+            <SecondHand resource="second_hand" x="213" y="20" width="24" height="260"
+                pivotX="0.5" pivotY="0.7884615">
+                <Variant mode="AMBIENT" target="alpha" value="0" />
+                <Sweep frequency="SYNC_TO_DEVICE" />
+            </SecondHand>
+        </AnalogClock>
+
+        <Group name="central_hub" x="0" y="0" width="450" height="450">
+            <PartDraw x="0" y="0" width="450" height="450">
+                <Ellipse x="207" y="208" width="36" height="36"><Fill color="#121314" /></Ellipse>
+                <Ellipse x="207" y="208" width="36" height="36"><Stroke color="#050606" thickness="2" /></Ellipse>
+                <Ellipse x="213" y="214" width="24" height="24"><Fill color="#2B2D2E" /></Ellipse>
+                <Ellipse x="213" y="214" width="24" height="24"><Stroke color="#111213" thickness="1.5" /></Ellipse>
+                <Ellipse x="221" y="222" width="8" height="8"><Fill color="#0D0E0F" /></Ellipse>
+                <Ellipse x="216" y="216" width="4" height="4"><Fill color="#5A5D5E" /></Ellipse>
+            </PartDraw>
+        </Group>
+    </Scene>
+</WatchFace>
