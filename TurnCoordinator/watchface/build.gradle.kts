@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+apply(from = rootProject.file("../gradle/release-signing.gradle"))
+
 android {
     namespace = "com.northstarlabs.avionics.turncoordinator"
     compileSdk {

@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+apply(from = rootProject.file("../gradle/release-signing.gradle"))
+
 android {
     namespace = "com.northstarlabs.avionics.gyrocompass"
     compileSdk {
@@ -21,7 +23,8 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            // R8 removes AGP's otherwise-empty DEX from this resource-only WFF package.
+            isMinifyEnabled = true
             isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),

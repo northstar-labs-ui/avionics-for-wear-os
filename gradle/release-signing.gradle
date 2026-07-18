@@ -1,0 +1,61 @@
+import java.util.Properties
+
+def configuredSigningProperties = System.getenv("AVIONICS_SIGNING_PROPERTIES")
+def signingPropertiesFile = configuredSigningProperties
+        ? new File(configuredSigningProperties)
+        : new File(
+                System.getProperty("user.home"),
+                ".android-keys/avionics-signing.properties"
+        )
+def releaseTaskRequested = gradle.startParameter.taskNames.any {
+    it.toLowerCase().contains("release")
+}
+
+if (signingPropertiesFile.isFile()) {
+    def signingProperties = new Properties()
+    signingPropertiesFile.withInputStream { signingProperties.load(it) }
+
+    def requiredProperties = ["storeFile", "storePassword", "keyAlias", "keyPassword"]
+    def missingProperties = requiredProperties.findAll {
+        !signingProperties.getProperty(it)?.trim()
+    }
+    if (!missingProperties.isEmpty()) {
+        throw new GradleException(
+                "Missing release-signing properties in ${signingPropertiesFile}: " +
+                        missingProperties.join(", ")
+        )
+    }
+
+    def configuredStoreFile = new File(signingProperties.getProperty("storeFile"))
+    def releaseStoreFile = configuredStoreFile.isAbsolute()
+            ? configuredStoreFile
+            : new File(signingPropertiesFile.parentFile, configuredStoreFile.path)
+    if (!releaseStoreFile.isFile()) {
+        throw new GradleException("Release keystore not found: ${releaseStoreFile}")
+    }
+
+    android {
+        signingConfigs {
+            release {
+                storeFile releaseStoreFile
+                storePassword signingProperties.getProperty("storePassword")
+                keyAlias signingProperties.getProperty("keyAlias")
+                keyPassword signingProperties.getProperty("keyPassword")
+                enableV1Signing true
+                enableV2Signing true
+                enableV3Signing true
+                enableV4Signing true
+            }
+        }
+        buildTypes {
+            release {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+} else if (releaseTaskRequested) {
+    throw new GradleException(
+            "Release signing is not configured. Create ${signingPropertiesFile} " +
+                    "as described in SIGNING.md at the repository root."
+    )
+}
