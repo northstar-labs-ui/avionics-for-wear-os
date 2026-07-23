@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+apply(from = rootProject.file("../gradle/release-signing.gradle"))
+
 android {
     namespace = "com.northstarlabs.avionics.helicopter"
     compileSdk {
@@ -22,7 +24,8 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            // R8 removes AGP's otherwise-empty DEX from this resource-only WFF package.
+            isMinifyEnabled = true
             // WFF bundles are resource-only; never discard renderer resources.
             isShrinkResources = false
             proguardFiles(

@@ -15,8 +15,8 @@ Use this checklist for each watch face included in a release.
 ## Validation
 
 - [ ] Run the debug build for every changed project.
-- [ ] Run the release build with the maintainer's private signing setup kept
-      outside the repository.
+- [ ] Run the release build using the private setup documented in
+      [`SIGNING.md`](SIGNING.md), kept outside the repository.
 - [ ] Run lint and any available Watch Face Format validation tools.
 - [ ] Test installation or upgrade on a supported physical Wear OS device.
 - [ ] Verify the watch-face picker name and preview.
